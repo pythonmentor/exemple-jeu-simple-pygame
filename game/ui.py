@@ -12,6 +12,7 @@ BLOCK_DOWN_EVENT = pygame.USEREVENT + 0
 
 def create_app():
     """Crée une nouvelle application."""
+    pygame.display.set_caption(config.UI_TITLE)
     pygame.time.set_timer(BLOCK_DOWN_EVENT, config.UI_TIMER, True)
     pygame.key.set_repeat(config.UI_KEY_REPEAT_DELAY)
     return {
