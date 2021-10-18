@@ -1,12 +1,12 @@
 """Lancement du jeu."""
 
-from . import ui
+from .ui import Application
 
 
 def main():
     """Point d'entrée principal du jeu."""
-    app = ui.create_app()
-    ui.run(app)
+    app = Application()
+    app.run()
 
 
 if __name__ == "__main__":
